@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>じゃんけん</title>
+</head>
+
+<body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="js/app.js"></script>
+
+
+  <!-- タイトル -->
+  <header>
+    <img src="img/title.png" alt="タイトル">
+    <!-- <p>さぁ、じゃんけんだ！！！！</p> -->
+    <img src="img/IMG_1573.GIF" alt="さぁ、じゃんけんだ！！！！" class="small-image">
+  </header>
+
+
+  <!-- ボタン -->
+
+  <ul>
+    <style>
+      /* ボタンのスタイル */
+      .button {
+        display: inline-block;
+        /* インラインブロック要素にする */
+        position: relative;
+        /* 相対位置指定 */
+        width: 100px;
+        /* ボタンの幅 */
+        height: 100px;
+        /* ボタンの高さ */
+        overflow: hidden;
+        /* ボタンの内容がはみ出ないように */
+      }
+
+      /* ボタンの画像のスタイル */
+      .button img {
+        width: 100%;
+        /* ボタンの幅いっぱいに画像を表示 */
+        height: 100%;
+        /* ボタンの高さいっぱいに画像を表示 */
+        display: block;
+        /* インライン要素をブロック要素に変換 */
+        position: absolute;
+        /* 絶対位置指定 */
+        top: 0;
+        /* 上端に配置 */
+        left: 0;
+        /* 左端に配置 */
+      }
+    </style>
+
+    <!-- ボタンとして機能するために、画像を含むボタン要素を作成 -->
+    <button id="gu" class="button" onclick="buttonClicked('gu')">
+      <img src="img/gu.png" alt="グー">
+    </button>
+
+
+    <!-- ボタンとして機能するために、画像を含むボタン要素を作成 -->
+    <button id="cho" class="button" onclick="buttonClicked('cho')">
+      <img src="img/cho.png" alt="チョキ">
+    </button>
+    <button id="par" class="button" onclick="buttonClicked('par')">
+      <img src="img/par.png" alt="パー">
+    </button>
+
+
+  </ul>
+
+  <!-- PCの出した手 -->
+  <section>
+    <img src="img/computerhand.png" alt="">
+    <div id="answer-box"></div>
+
+  </section>
+
+
+  <!-- 勝敗 -->
+  <div id="judgment"></div>
+  </div>
+
+
+  <!-- footer -->
+  <footer><img src="img/footer.png" alt=""></footer>
+
+
+
+</body>
+
+</html>

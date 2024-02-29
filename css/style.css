@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+}
+
+/* タイトル */
+
+img {
+  width: 700px;
+  height: auto; /* 高さは自動調整されるように設定 */
+  display: block; /* インライン要素をブロック要素に変更 */
+  margin: auto; /* 左右のマージンを自動計算して中央に配置 */
+}
+  
+
+/* header p {
+  text-align: center;
+  font-size: 30px;
+color: blueviolet;
+  margin-bottom: 20px;
+}
+ */
+.small-image {
+  display: block; /* 画像をブロック要素として扱う */
+  margin: 0 auto; /* 左右のマージンを自動で設定して、中央に配置する */
+  width:  200px; /* 小さな画像の幅 */
+  height: auto; /* 高さは自動で調整 */
+}
+
+.large-image {
+  width: 400px; /* 大きな画像の幅 */
+  height: auto; /* 高さは自動で調整 */
+}
+
+/* ボタン */
+ul {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+button {
+  width: 350px;
+  height: 80px;
+  font-size: 30px;
+  border-radius: 50px; /* 丸い形にするための設定 */
+  /* フォントを適用 */
+}
+
+button:hover {
+  background-color: plum;
+  color: white;
+  border-radius: 50px; /* 丸い形にするための設定 */
+}
+
+
+  #gu {
+    width: １０px; /* 幅を調整 */
+    height: 100px; /* 高さを調整 */
+  
+}
+
+#cho {
+  background-color: rgb(255, 238, 0); /* チョキの背景色を黄色に設定 */
+}
+
+#par {
+  background-color: rgb(232, 100, 199); /* パーの背景色をピンクに設定 */
+}
+
+
+/* PCの出した手 */
+
+h2 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+#answer-box {
+  width: 300px;
+  height: 100px;
+  border: 2px solid #000;
+  margin: auto;
+  margin-bottom: 50px;
+  text-align: center;
+  line-height: 100px;
+  font-size: 30px;
+  border-radius: 20px; /* 枠を丸くする */
+  color: white;
+  background-color: greenyellow;
+  /* フォントを適用 */
+}
+
+/* 勝敗 */
+
+#judgment {
+  text-align: center;
+  font-size: 100px;
+  color: red;
+}
